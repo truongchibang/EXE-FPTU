@@ -1855,15 +1855,15 @@ Theme Toggle Button
   <script  src="assets/main.js"></script>
   <script>
     // Khởi tạo map với trung tâm tại Hà Nội, Việt Nam (zoom 11 để bao quát cả hai địa chỉ)
-    var map = L.map('map').setView([21.0285, 105.8048], 11);
+    var map = L.map('map').setView([21.0134, 105.5262], 17);
 
     // Thêm tile layer từ OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Marker cho địa chỉ 2: Khu Công nghệ cao Hòa Lạc (tọa độ chính xác hơn)
-    L.marker([21.0124, 105.5256]).addTo(map)
+    // Marker cho địa chỉ Đại học FPT: Khu Công nghệ cao Hòa Lạc (tọa độ chính xác hơn)
+    L.marker([21.0134, 105.5262]).addTo(map)
         .bindPopup('Đại học FPT - Khu Công nghệ cao Hòa Lạc, Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội')
         .openPopup();
 
